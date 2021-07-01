@@ -1,6 +1,13 @@
 SaintP_weather = {'monday' : 35, 'friday' : 33, 'sunday' : 34}
 print(SaintP_weather['monday'])
 
+
+
+
+from termcolor import colored
+
+
+
 recipe = {'name' : 'Финтифлюшки с шоколадом', 'annotation' : 'Какие-то вкусные штучки посыпанные тертым шоколадом',\
           'cooking_time': 50, 'desc' : 'Возьмите тесто, скрутите из него финтифлюшки, посыпьте шоколадом',\
          'steps' : 3, 'stages' : ['для теста смешайте яйца и муку', 'натрите шоколад на крупной терке', \
@@ -14,9 +21,12 @@ recipe3 = {'name' : 'Бутерброд', 'annotation' : 'Быстрый и вк
           'steps' : 2, 'stages' : ['нарежьте хлеб, колбасу, сыр и помидор', \
                                    'положите кусочки друг на друга в той последовательности, которая вам нравится'], \
            'ingredients' : ['хлеб', 'колбаса', 'сыр', 'помидор']}
-dictionary = {'res1' : recipe,
-            'res2' : recipe2,
-            'res3': recipe3}
-print(dictionary)
 
+
+dictionary = {'res1' : recipe,'res2' : recipe2,'res3': recipe3}
+
+
+print ("",colored(dictionary['res1'], 'red'),'\n',
+colored(dictionary['res2'], 'yellow'), '\n',
+colored(dictionary['res3'], 'green'))
 
